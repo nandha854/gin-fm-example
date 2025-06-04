@@ -12,7 +12,6 @@ import (
 
 // Define a struct to hold feature flags
 type AppConfig struct {
-WelcomeMessage *rox.String
 DashboardTheme *rox.String
 }
 
@@ -26,9 +25,8 @@ fmt.Println("ERROR: Please set the environment variable ROX_ENV_KEY with your Cl
 os.Exit(1)
 }
 
-// Define the feature flags with default values and allowed options
+// Define the remaining feature flags with default values and allowed options
 config = AppConfig{
-	WelcomeMessage: rox.NewString("Hello!", []string{"Hello!", "Hi!", "Greetings!"}),
 	DashboardTheme: rox.NewString("light", []string{"light", "dark", "synthwave"}),
 }
 
@@ -52,14 +50,13 @@ context := core.NewContext()
 context.SetCustomStringProperty("user_id", "123")
 context.SetCustomStringProperty("user_group", "beta-users")
 
-// Evaluate each feature flag in the current context
-welcome := config.WelcomeMessage.GetValue(context)
-theme := config.DashboardTheme.GetValue(context)
-
+// Directly use the literal value for the WelcomeMessage
+welcome := "Hii!"
 fmt.Println("Welcome Message:", welcome)
+
+theme := config.DashboardTheme.GetValue(context)
 fmt.Println("Dashboard Theme:", theme)
 
 // Keep running so updates can be pulled dynamically
 select {}
 }
-
