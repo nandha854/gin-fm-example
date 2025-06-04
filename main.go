@@ -9,14 +9,14 @@ import (
 
 type Flags struct {
 	ShowMessage server.RoxFlag
-	Message     server.RoxString
+	// Removed Message     server.RoxString   as it is no longer needed
 	FontColor   server.RoxString
 	FontSize    server.RoxInt
 }
 
 var flags = &Flags{
 	ShowMessage: server.NewRoxFlag(false),
-	Message:     server.NewRoxString("This is the default message; try changing some flag values!", []string{}),
+	// Removed Message initialization
 	FontColor:   server.NewRoxString("Black", []string{"Red", "Green", "Blue", "Black"}),
 	FontSize:    server.NewRoxInt(12, []int{12, 16, 24}),
 }
@@ -50,7 +50,8 @@ func homePage(c *gin.Context) {
 func demo(c *gin.Context) {
 	msg := ""
 	if flags.ShowMessage.IsEnabled(nil) {
-		msg = flags.Message.GetValue(nil)
+		// Since we no longer have the Message flag, directly return "Hii!"
+		msg = "Hii!"
 	} else {
 		msg = "Flag message hidden. Enable the flag in the Cloudbees platform to display it."
 	}
