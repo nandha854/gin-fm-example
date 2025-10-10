@@ -1,0 +1,18 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag-configuration
+
+flag: NumberTestFlag
+
+enabled: true
+
+stickinessProperty: rox.distinct_id
+
+defaultValue: 30
+
+conditions:
+  - allOf:
+      - property:
+          name: option
+          operator: is-true
+    flagValue: 10

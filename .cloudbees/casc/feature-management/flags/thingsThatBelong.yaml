@@ -1,0 +1,14 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag
+
+flag: thingsThatBelong
+flagType: string
+description: 
+labels:
+
+availableValues:
+  - skip
+  - allowed
+
+isPermanent: false
