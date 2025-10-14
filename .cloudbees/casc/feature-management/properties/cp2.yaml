@@ -2,6 +2,6 @@
 apiVersion: featuremanagement.cloudbees.io/v1alpha1
 kind: flag-properties
 
-name: rox.app_release
-type: Semver
+name: cp2
+type: Boolean
 description: ""

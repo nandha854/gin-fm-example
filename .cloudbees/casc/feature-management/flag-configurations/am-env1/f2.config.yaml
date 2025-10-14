@@ -2,12 +2,15 @@
 apiVersion: featuremanagement.cloudbees.io/v1alpha1
 kind: flag-configuration
 
-flag: serveLemonade
+flag: f2
 
-enabled: false
+enabled: true
 
 stickinessProperty: rox.distinct_id
 
 defaultValue: false
 
-conditions: []
+conditions:
+  - flagValue: true
+    group:
+      id: fb482a73-cf58-4e48-be55-e3161138e488

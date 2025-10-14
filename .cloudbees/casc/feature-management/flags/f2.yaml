@@ -2,15 +2,13 @@
 apiVersion: featuremanagement.cloudbees.io/v1alpha1
 kind: flag
 
-flag: NumberTestFlag
-flagType: number
+flag: f2
+flagType: boolean
 description: 
 labels:
 
 availableValues:
-  - 30
-  - 0
-  - 20
-  - 10
+  - true
+  - false
 
 isPermanent: false

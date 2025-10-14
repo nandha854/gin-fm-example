@@ -2,17 +2,15 @@
 apiVersion: featuremanagement.cloudbees.io/v1alpha1
 kind: flag-configuration
 
-flag: StringTestFlag
+flag: f2
 
 enabled: false
 
 stickinessProperty: rox.distinct_id
 
-defaultValue: Green
+defaultValue: false
 
 conditions:
-  - allOf:
-      - property:
-          name: option
-          operator: is-true
-    flagValue: White
+  - flagValue: true
+    group:
+      id: fb482a73-cf58-4e48-be55-e3161138e488

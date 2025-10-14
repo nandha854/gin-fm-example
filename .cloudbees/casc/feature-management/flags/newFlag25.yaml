@@ -2,13 +2,14 @@
 apiVersion: featuremanagement.cloudbees.io/v1alpha1
 kind: flag
 
-flag: serveLemonade
+flag: newFlag25
 flagType: boolean
-description: 
+description: testing has perm
 labels:
+  - l1
+  - l2
+  - l3
 
 availableValues:
-  - true
-  - false
 
-isPermanent: false
+isPermanent: true

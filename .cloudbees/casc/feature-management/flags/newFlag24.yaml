@@ -2,13 +2,14 @@
 apiVersion: featuremanagement.cloudbees.io/v1alpha1
 kind: flag
 
-flag: BooleanTestFlag
+flag: newFlag24
 flagType: boolean
-description: 
+description: testing has perm
 labels:
+  - l1
+  - l2
+  - l3
 
 availableValues:
-  - false
-  - true
 
-isPermanent: false
+isPermanent: true
