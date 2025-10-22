@@ -10,7 +10,4 @@ stickinessProperty: rox.distinct_id
 
 defaultValue: false
 
-conditions:
-  - flagValue: true
-    group:
-      id: fb482a73-cf58-4e48-be55-e3161138e488
+conditions: []

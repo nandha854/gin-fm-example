@@ -4,11 +4,11 @@ kind: flag
 
 flag: f2
 flagType: boolean
-description: 
+description: ""
 labels:
 
 availableValues:
-  - true
-  - false
+  - "true"
+  - "false"
 
 isPermanent: false
