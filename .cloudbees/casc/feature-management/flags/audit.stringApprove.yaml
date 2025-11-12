@@ -1,0 +1,13 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag
+
+flag: audit.stringApprove
+flagType: string
+description: ""
+labels:
+
+availableValues:
+  - stringVal
+
+isPermanent: false

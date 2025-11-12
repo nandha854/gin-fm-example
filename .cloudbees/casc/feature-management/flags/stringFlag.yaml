@@ -1,0 +1,19 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag
+
+flag: stringFlag
+flagType: string
+description: ""
+labels:
+
+availableValues:
+  - newVal2
+  - vvsd
+  - new string val
+  - new string val 2
+  - asdasd
+  - newStringVal
+  - newVal3
+
+isPermanent: false

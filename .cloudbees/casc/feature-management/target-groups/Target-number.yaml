@@ -1,0 +1,15 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: target-group
+
+name: Target-number
+
+description: Numbers
+
+conditions:
+  allOf:
+    - property:
+        name: number-property
+        operator: ne
+        operands:
+            - "5"

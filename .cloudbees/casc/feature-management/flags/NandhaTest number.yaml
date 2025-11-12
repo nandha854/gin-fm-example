@@ -2,13 +2,13 @@
 apiVersion: featuremanagement.cloudbees.io/v1alpha1
 kind: flag
 
-flag: a
-flagType: boolean
+flag: NandhaTest number
+flagType: number
 description: ""
 labels:
 
 availableValues:
-  - "true"
-  - "false"
+  - "123"
+  - "48"
 
 isPermanent: false

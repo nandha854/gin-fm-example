@@ -1,0 +1,15 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: target-group
+
+name: NandhaTest
+
+description: Local development flags
+
+conditions:
+  allOf:
+    - property:
+        name: number-property
+        operator: eq
+        operands:
+            - "1234"

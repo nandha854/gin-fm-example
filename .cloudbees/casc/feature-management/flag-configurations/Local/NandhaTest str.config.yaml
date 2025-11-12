@@ -1,0 +1,25 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag-configuration
+
+flag: NandhaTest str
+
+enabled: false
+
+stickinessProperty: rox.distinct_id
+
+defaultValue: string
+
+conditions:
+  - allOf:
+      - allOf:
+          - group:
+              name: NandhaTest
+    flagValue: string
+  - allOf:
+      - property:
+          name: number-property
+          operator: ne
+          operands:
+            - 100
+    flagValue: nandha

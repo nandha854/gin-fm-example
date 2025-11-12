@@ -1,0 +1,19 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag-configuration
+
+flag: audit.boolApprove
+
+enabled: true
+
+stickinessProperty: bugbash_sam_string
+
+defaultValue:
+  valueWrittenInCode: true
+
+conditions:
+  - allOf:
+      - anyOf:
+          - group:
+              name: Target-number
+    flagValue: true

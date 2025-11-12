@@ -2,12 +2,13 @@
 apiVersion: featuremanagement.cloudbees.io/v1alpha1
 kind: flag-configuration
 
-flag: f2
+flag: newFlag24
 
-enabled: true
+enabled: false
 
 stickinessProperty: rox.distinct_id
 
-defaultValue: false
+defaultValue:
+  valueWrittenInCode: true
 
 conditions: []
