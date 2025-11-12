@@ -1,0 +1,14 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag
+
+flag: User-Flag
+flagType: string
+description: ""
+labels:
+
+availableValues:
+  - Admin
+  - User
+
+isPermanent: false

@@ -1,0 +1,20 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag-configuration
+
+flag: User-Flag
+
+enabled: false
+
+stickinessProperty: rox.distinct_id
+
+defaultValue: User
+
+conditions:
+  - allOf:
+      - property:
+          name: stringProp
+          operator: in-array
+          operands:
+            - Admin
+    flagValue: Admin

@@ -1,0 +1,13 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag
+
+flag: Campaign1Flag
+flagType: string
+description: MB flag
+labels:
+
+availableValues:
+  - hello
+
+isPermanent: false

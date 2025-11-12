@@ -1,0 +1,15 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag
+
+flag: app_model_migration_enabled
+flagType: string
+description: 'This feature flag helps manage specific customers transitioning from one plan (such as tier 1 to enterprise) to another. '
+labels:
+  - Tier 1
+  - Enterprise
+  - Tier 2
+
+availableValues:
+
+isPermanent: false
