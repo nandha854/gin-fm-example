@@ -1,0 +1,15 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag
+
+flag: a
+flagType: boolean
+description: ""
+labels:
+  - l2
+
+availableValues:
+  - "true"
+  - "false"
+
+isPermanent: false
