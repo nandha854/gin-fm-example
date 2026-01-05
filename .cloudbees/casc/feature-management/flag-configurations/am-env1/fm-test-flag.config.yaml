@@ -2,13 +2,12 @@
 apiVersion: featuremanagement.cloudbees.io/v1alpha1
 kind: flag-configuration
 
-flag: a
+flag: fm-test-flag
 
 enabled: false
 
 stickinessProperty: rox.distinct_id
 
-defaultValue:
-  valueWrittenInCode: true
+defaultValue: true
 
 conditions: []

@@ -2,6 +2,6 @@
 apiVersion: featuremanagement.cloudbees.io/v1alpha1
 kind: flag-properties
 
-name: cp1
+name: cp-3
 type: Boolean
-description: "asdasd"
+description: ""

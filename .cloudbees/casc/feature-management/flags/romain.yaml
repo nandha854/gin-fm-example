@@ -2,11 +2,10 @@
 apiVersion: featuremanagement.cloudbees.io/v1alpha1
 kind: flag
 
-flag: a
+flag: romain
 flagType: boolean
 description: ""
 labels:
-  - l2
 
 availableValues:
   - "true"

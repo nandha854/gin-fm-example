@@ -2,15 +2,12 @@
 apiVersion: featuremanagement.cloudbees.io/v1alpha1
 kind: target-group
 
-name: tg2
+name: TG1
 
-description: tg2 desc
+description: 
 
 conditions:
-  anyOf:
+  allOf:
     - property:
-        name: cp1
+        name: cp-1
         operator: is-true
-    - property:
-        name: cp2
-        operator: is-false

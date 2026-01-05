@@ -2,12 +2,12 @@
 apiVersion: featuremanagement.cloudbees.io/v1alpha1
 kind: target-group
 
-name: tg1
+name: tg-romain
 
 description: 
 
 conditions:
   allOf:
     - property:
-        name: cp1
-        operator: is-undefined
+        name: cp-romain
+        operator: is-true
