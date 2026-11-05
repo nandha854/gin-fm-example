@@ -101,3 +101,4 @@ To update flags in the platform UI:
 
 The updated flag value is soon reflected in the display of the application.
 For more information on setting flag values, refer to the link:https://docs.cloudbees.com/docs/cloudbees-platform/latest/feature-management/configure-feature-flags[flag configuration documentation].
+
